@@ -49,7 +49,7 @@ class ModelInput(BaseModel):
 
 app = FastAPI()
 
-model = tf.keras.models.load_model('endpoint/test_model.h5')
+model = tf.keras.models.load_model('test_model.h5')
 
 @app.get("/")
 async def index():
