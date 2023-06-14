@@ -19,7 +19,7 @@ maxlen = 10  # Set the desired max sequence length
 pad_type = 'post'
 trunc_type = 'post'
 
-df_vegan_test = pd.read_csv('df_vegan_test.csv')
+df_vegan_test = pd.read_csv('endpoint/df_vegan_test.csv')
 
 def preprocess_title(sentence):
     # Remove trailing spaces
@@ -61,7 +61,8 @@ class ModelInput(BaseModel):
 
 app = FastAPI()
 
-model = tf.keras.models.load_model('test_model.h5')
+model = tf.keras.models.load_model('endpoint/Trained E16, BiLSTM1, MaxP F32 KS5.h5')
+# model.summary()
 
 @app.get("/")
 async def index():
@@ -74,7 +75,7 @@ async def recommendation(request: ModelInput):
     try:
         sentences = [request.sentence]
         sentences = preprocess_texts_input(sentences)
-        print(sentences)
+        # print(sentences)
         prediction = model.predict(sentences)
 
         threshold = 0.5
@@ -83,7 +84,7 @@ async def recommendation(request: ModelInput):
         for index, pred in enumerate(prediction[0]):
             if pred > threshold:
                 recommendation.append(str(df_vegan_test['title'].iloc[index]))
-        top_recommendations = recommendation[:5]
+        top_recommendations = recommendation
         json_response = {"topRecommendationRecipes": top_recommendations}
         return json_response
     except Exception as e:
