@@ -19,7 +19,7 @@ maxlen = 10  # Set the desired max sequence length
 pad_type = 'post'
 trunc_type = 'post'
 
-df_vegan_test = pd.read_csv('endpoint/df_vegan_test.csv')
+df_vegan_test = pd.read_csv('df_vegan_test.csv')
 
 def preprocess_title(sentence):
     # Remove trailing spaces
@@ -61,7 +61,7 @@ class ModelInput(BaseModel):
 
 app = FastAPI()
 
-model = tf.keras.models.load_model('endpoint/Trained E16, BiLSTM1, MaxP F32 KS5.h5')
+model = tf.keras.models.load_model('Trained E16, BiLSTM1, MaxP F32 KS5.h5')
 # model.summary()
 
 @app.get("/")
