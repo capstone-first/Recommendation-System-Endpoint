@@ -20,11 +20,11 @@ Machine Learning API develop using [FastAPI](https://fastapi.tiangolo.com/)
 
 # API Documentation
 
-[ML Vegalicious API Documentations](https://recommendation-system-endpoint-yulxuobada-et.a.run.app)
+[ML Vegalicious API Documentations](https://documenter.getpostman.com/view/6637061/2s93sdZXTN)
 
 # Active URL
 
-[ML Vegalicious API](https://documenter.getpostman.com/view/6637061/2s93sdZXTN)
+[ML Vegalicious API](https://recommendation-system-endpoint-yulxuobada-et.a.run.app)
 
 # Machine Learning Endpoint Knight
 
