@@ -1,6 +1,6 @@
-# Vegalicous Mechine Learning API
+# Vegalicious Machine Learning API
 
-Mechine Learning API develop using [FastAPI](https://fastapi.tiangolo.com/)
+Machine Learning API develop using [FastAPI](https://fastapi.tiangolo.com/)
 
 # How to Install
 
