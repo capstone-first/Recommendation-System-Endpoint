@@ -26,10 +26,10 @@ Mechine Learning API develop using [FastAPI](https://fastapi.tiangolo.com/)
 
 [ML Vegalicious API](https://documenter.getpostman.com/view/6637061/2s93sdZXTN)
 
-# Backend Knight
+# Machine Learning Endpoint Knight
 
 | **Name**                 | **Bangkit ID**  |
 | ------------------------ | --------------- |
 | Jasmine Aulia Pramesty   | **M309DSY0511** |
-| Abidjanna Zulfa Hamdika  | **C309DSY3242** |
+| Abidjanna Zulfa Hamdika  | **M038DSX1317** |
 | Binti Fitrothul Khasanah | **M040DSY0262** |
